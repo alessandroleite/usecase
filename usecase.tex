@@ -19,15 +19,19 @@
 \posttitle{\par\end{center}\vskip 0.5em}
 \date{}
 
-\title{$<$UC-Name$>$}
-
 \renewcommand*\sectionmark[1]{\markboth{#1}{}}
 \renewcommand*\subsectionmark[1]{\markright{#1}}
+
+\newcommand{\name}[1]{%
+   \title{#1}
+   \maketitle
+}
 
 \includecomment{comment}
 
 \begin{document}
-   \maketitle
+   \name{$<$UC-Name$>$}
+
 \vspace{-2cm}%   
 \begin{comment}
 	\begin{color}{blue}
