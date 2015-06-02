@@ -1,0 +1,149 @@
+%!TeX encoding = UTF-8
+%!TeX spellcheck = en_US
+
+\documentclass[notitlepage,fullpage]{article}
+\usepackage[left=2.cm,right=2.cm,top=.8cm,bottom=.8cm,includefoot,includehead,headheight=39pt]{geometry}
+% \geometry{letterpaper}
+
+\usepackage[utf8]{inputenc}
+\usepackage{paralist}
+\usepackage{fullpage}
+
+\usepackage{titling}
+\usepackage{lipsum}
+\usepackage{framed}
+\usepackage{color}
+\usepackage{comment}
+
+\pretitle{\begin{center}\LARGE \bfseries Use-Case Specification: }
+\posttitle{\par\end{center}\vskip 0.5em}
+\date{}
+
+\title{$<$UC-Name$>$}
+
+\renewcommand*\sectionmark[1]{\markboth{#1}{}}
+\renewcommand*\subsectionmark[1]{\markright{#1}}
+
+\includecomment{comment}
+
+\begin{document}
+   \maketitle
+\vspace{-2cm}%   
+\begin{comment}
+	\begin{color}{blue}
+  		\noindent\textbf{Note}: this template is provided to help on writing a use case specification. The text in blue is included to guide the authors.]
+  \end{color}
+\end{comment}
+
+\section{General Information}
+\subsection{Use-case description}
+
+\begin{comment}
+	\textcolor{blue}{\noindent The description communicates the reason(s) of the use case. In general, a well-written description comprises: (a)  the problem which the use case solves; (b) the importance that the use case has in the whole system; and (c) what is achieved by executing the use case. A single or two paragraphs will suffice for this description.}
+\end{comment}
+
+% \lipsum[1]
+
+\section{Preconditions}
+
+\begin{comment}
+	\textcolor{blue}{A precondition of a use case represents the state of the system that must be present (i.e., must be true) prior to a use case being performed. A well-defined precondition can be easily checked. For example, instead of saying that a system B must available, it should tell the system's name, accessing address, among others.}%
+\end{comment}
+
+\subsection{Precondition one}
+\begin{comment}
+   \textcolor{blue}{A first precondition.}
+\end{comment}
+
+
+\subsection{Precondition two}
+\begin{comment}
+   \textcolor{blue}{A second precondition.}
+\end{comment}
+
+\section{Scenarios}\label{sec:scenarios}
+
+\begin{comment}
+\begin{color}{blue}
+A use case consists of a number of scenarios, each representing specific instances of the use case that correspond to specific inputs from the actor or to specific conditions in the environment. Each scenario describes alternative ways that the system provides a behavior, or it can describe failure or exception cases., as depicted in figure 1.
+\end{color}
+
+\begin{verbatim}
+
+                                                    __(A2.1)__
+                         ___(A1)__         __(A2)__/          \___
+(main scenario)_________/         \_______/                       \__.
+\end{verbatim}
+
+\begin{color}{blue}\noindent Figure 1. Use-case scenarios\end{color}
+\end{comment}
+
+\subsection{Main Scenario}\label{subsec:main:scenario}
+
+\begin{comment}
+	\begin{color}{blue}
+
+		\noindent The main flow follows a step-by-step description of the use-case. This means that the main flow describes what the actor does and what the system does in response; i.e., it needs to be phrased in the form of a dialog between the actor and the system. In general, a scenario description explores:
+
+		\begin{itemize}
+  			\item How and when the use case starts
+  			\item When the use case interacts with the actors, and what data they exchange
+  			\item When the use case uses data stored in the system or stores data in the system
+  			\item How and when the use case ends
+		\end{itemize}
+
+		\noindent It does not describe:
+
+		\begin{itemize}
+  			\item The graphical user interface (GUI)
+  			\item Technical details of hardware or software
+  			\item Design issues
+		\end{itemize}
+
+		As you detail the main scenario, identify alternate flows by asking these questions for each step:
+
+		\begin{itemize}
+   			\item Are there different options available, depending on input from the actor? (for example, if the actor enters an invalid PIN number while accessing an ATM)
+   			\item What business rules can come into play? (For instance, the actor requests more money from the ATM than is available in her account)
+   			\item What could go wrong? (such as no network connection available when required to perform a transaction) . It is best to develop these scenarios iteratively, as well. Begin by identifying them. Examine each possible scenario to determine whether it is relevant, that it can actually happen, and that it is distinct from other scenarios. Eliminate redundant or unnecessary scenarios, and then start elaborating on the more important ones.
+		\end{itemize}
+
+		\noindent If any information is exchanged, be specific about what is passed back and forth. For example, it is not interesting to say that the client/user enter his/her account data to access his/her bank account. It is better to say the client gives the account's number and the password.
+
+		\noindent A picture is sometimes worth a thousand words, though there is no substitute for clean, clear prose.  If it improves clarity, feel free to paste graphical depictions of user interfaces, process flows or other figures into the use case.  If a flow chart is useful to present a complex decision process, by all means use it!  Similarly for state-dependent behavior, a state-transition diagram often clarifies the behavior of a system better than pages upon pages of text.  Use the right presentation medium for your problem, but be wary of using terminology, notations or figures that your audience may not understand.  Remember that your purpose is to clarify, not obscure.		
+	\end{color}
+\end{comment}
+
+\subsection{Alternative Scenario}\label{subsec:alternative:scenario}
+\subsubsection{$<$ First Alternative Scenario $>$}
+
+\begin{comment}
+	\begin{color}{blue}
+		\noindent More complex alternatives are described in a separate section, referred to in the Main Scenario  subsection of the Scenarios section.  Think of the Alternative Scenario subsections like alternative behaviors. In this case, each alternative flow represents an alternative behavior usually due to exceptions that occur in the main flow. 
+
+		\noindent An alternative flow may be as long as necessary to describe the events associated with its behavior. When an alternative flow ends, the events of the main flow of events are resumed unless otherwise stated.
+	\end{color}
+\end{comment}
+
+\subsubsection{$<$ Second Alternative Scenario $>$}
+
+\begin{comment}
+  \begin{color}{blue}
+	 \noindent There may be, and most likely will be, a number of alternative flows in a use case.  Keep each alternative flow separate to improve clarity.  Using alternative flows improves the readability of the use case, as well as preventing use cases from being decomposed into hierarchies of use cases.  Keep in mind that use cases are just textual descriptions, and their main purpose is to document the behavior of a system in a clear, concise, and understandable way.
+  \end{color}
+\end{comment}
+
+\section{Postconditions}\label{sec:postconditions}
+
+\begin{comment}
+  \begin{color}{blue}
+     \noindent A postcondition of a use case is a list of possible states that the system can be in immediately after the use case has finished.
+  \end{color}
+\end{comment}
+
+\subsection{$<$ Postcondition one $>$}
+
+\subsection{$<$ Postcondition two $>$}
+
+
+\end{document}

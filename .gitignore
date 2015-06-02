@@ -1,0 +1,53 @@
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.brf
+*.bkp
+*.dvi
+*.exe
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lol
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdy
+*.tdo
+*.mlt*
+*.mlf*
+*.mtc*
+
+**/*.fdb_latexmk
+**/*.backup
+**/*.bkp
+
+# Mac IDE files
+*.swp
+*~
+
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
